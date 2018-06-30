@@ -1,6 +1,6 @@
 define etcservices::service (
   Pattern[/^[\w\.\-]+\/tcp$/, /^[\w\.\-]+\/udp$/] $service_name = $name,
-  Integer                                         $port         = undef,
+  Variant[Integer, Undef]                         $port         = undef,
   String                                          $comment      = '',
   Array[String]                                   $aliases      = [],
   Enum['present', 'absent']                       $ensure       = 'present'
