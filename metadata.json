@@ -1,0 +1,46 @@
+{
+  "name": "puppet-etcservices",
+  "version": "0.0.1",
+  "author": "James Eckersall",
+  "summary": "Installs, configures, and manages entries in /etc/services",
+  "license": "Apache-2.0",
+  "source": "https://github.com/jameseck/puppet-etcservices",
+  "project_page": "https://github.com/jameseck/puppet-etcservices",
+  "issues_url": "https://github.com/jameseck/puppet-etcservices/issues",
+  "dependencies": [
+  ],
+  "data_provider": "hiera",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "16.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.5.0 < 6.0.0"
+    }
+  ]
+}
